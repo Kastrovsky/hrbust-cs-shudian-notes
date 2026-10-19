@@ -1,0 +1,15 @@
+# 忽略PPT和PDF
+*.pptx
+*.pdf
+# 如果你还有其他不想纳入git的，后面再加
+*.zip
+*.docx
+
+# 忽略图片
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.JPG
+*.PNG
