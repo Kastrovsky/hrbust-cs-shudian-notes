@@ -56,3 +56,8 @@
 workbuddy/
 .workbuddy
 workbuddy
+
+# ---- PPT 抽取中间产物（2026-11-06 追加）----
+# slidep inspect 解包出来的中间目录，含 media 原件与 slides.md，体积大且可随时重现，
+# 不随仓库分发。抽取结果只需落成最终 md，中间目录一律丢弃。
+.slidep/
