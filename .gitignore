@@ -80,3 +80,8 @@ workbuddy
 # 登录态 / 会话导出文件
 *auth*.json
 *.session.json
+
+# 习题集的自包含 HTML（1.7 MB，公式字体 base64 内嵌，属构建产物）
+# 重新生成：node scripts/build_html.js "试卷/数字电路与逻辑_期末习题集_含答案与解析.md" \
+#                                    "试卷/数字电路与逻辑_期末习题集_含答案与解析.html"
+试卷/*.html
