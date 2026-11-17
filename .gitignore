@@ -85,3 +85,9 @@ workbuddy
 # 重新生成：node scripts/build_html.js "试卷/数字电路与逻辑_期末习题集_含答案与解析.md" \
 #                                    "试卷/数字电路与逻辑_期末习题集_含答案与解析.html"
 试卷/*.html
+
+# 构建 HTML 用的 node 依赖（dev-only，重装即可）
+# 安装：npm i katex markdown-it（版本记录见 scripts/build_html.js 头注释）
+node_modules/
+package.json
+package-lock.json
