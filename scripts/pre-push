@@ -1,0 +1,23 @@
+#!/bin/sh
+# pre-push 凭据闸门（可随仓库分发的副本）。
+# 安装：cp scripts/pre-push .git/hooks/pre-push && chmod +x .git/hooks/pre-push
+# 说明：.git/hooks/ 不随仓库分发，换机器 clone 后需重新安装一次。
+# 策略：检查不通过、或本机找不到 Python 无法完成检查时，一律阻断推送（fail-closed）。
+
+repo_root=$(git rev-parse --show-toplevel) || exit 1
+
+if command -v python >/dev/null 2>&1; then
+    py=python
+elif command -v py >/dev/null 2>&1; then
+    py=py
+else
+    echo "pre-push：找不到 Python，无法执行凭据检查，推送已阻断。" >&2
+    exit 1
+fi
+
+if ! "$py" "$repo_root/scripts/check_secrets.py"; then
+    echo "pre-push：凭据检查未通过，推送已阻断。处理干净后重新检查再推送。" >&2
+    exit 1
+fi
+
+exit 0
