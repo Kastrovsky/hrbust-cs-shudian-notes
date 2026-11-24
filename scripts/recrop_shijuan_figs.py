@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""重裁 试卷/images 下 5 张原卷配图（2026-11-18，台账 C-01）。
+"""重裁 计算机专业真题/images 下 5 张原卷配图（2026-11-18，台账 C-01）。
 
 背景：这批图初裁时四条边都压在内容上——底部 CP 时钟线、D0/D1/D2 引脚、+5V/接地、
       左侧 A/B/C 输入被切掉，有的还吞进题干文字（“（4）说明电路功能。”）。
-本脚本从 `试卷/数电期末题.docx` 内嵌的整页扫描重新裁剪，只保留图形本身：
+本脚本从 `计算机专业真题/源卷/数电期末题.docx` 内嵌的整页扫描重新裁剪，只保留图形本身：
   1. 自动把 docx 的 word/media 解到 `提取/docx_media/`（已存在则跳过）；
   2. 按"源页 + 裁剪框 + 抹白矩形"裁图（坐标由墨迹包围盒实测，不靠目测预览）；
   3. 去灰底 → 自动对比 → LANCZOS 放大到 ≤1000 px 宽（台账 C-07）→ 轻度锐化。
@@ -24,9 +24,9 @@ import zipfile
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCX = os.path.join(ROOT, "试卷", "数电期末题.docx")
+DOCX = os.path.join(ROOT, "计算机专业真题", "源卷", "数电期末题.docx")
 MEDIA = os.path.join(ROOT, "提取", "docx_media", "word", "media")
-OUT = os.path.join(ROOT, "试卷", "images")
+OUT = os.path.join(ROOT, "计算机专业真题", "images")
 
 # 输出文件名: (源页, 裁剪框, 需抹白的矩形列表（相对裁剪框左上角）)
 JOBS = {

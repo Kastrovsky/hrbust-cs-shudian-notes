@@ -29,7 +29,7 @@ from PIL import Image, ImageFilter, ImageOps
 
 ROOT = r"D:\文件\大二\数电"
 PAGES = os.path.join(ROOT, "提取", "pdf37_full")
-IMGS = os.path.join(ROOT, "试卷", "真题精解", "images")
+IMGS = os.path.join(ROOT, "计算机专业真题", "真题精解", "images")
 BAK = os.path.join(ROOT, "提取", "bak_images2")
 LOCATE = os.path.join(ROOT, "提取", "locate.json")
 

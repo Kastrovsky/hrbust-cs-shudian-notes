@@ -39,11 +39,11 @@
 !第7章_集成运算放大器和脉冲波形的产生与变换/images/*.png
 !第7章_集成运算放大器和脉冲波形的产生与变换/images/*.jpg
 # 真题原文精解里从原卷裁出的电路图（2026-10-21 追加）
-!试卷/images/*.png
-!试卷/images/*.jpg
-# 真题逐题精解（6 套卷）从原卷裁出的配图，路径为 试卷/真题精解/images/
-!试卷/真题精解/images/*.png
-!试卷/真题精解/images/*.jpg
+!计算机专业真题/images/*.png
+!计算机专业真题/images/*.jpg
+# 真题逐题精解（6 套卷）从原卷裁出的配图，路径为 计算机专业真题/真题精解/images/
+!计算机专业真题/真题精解/images/*.png
+!计算机专业真题/真题精解/images/*.jpg
 # 集成器件引脚与考法速查的器件符号图（2026-11-04 追加）
 # 其中 ppt_*.png 是从课件 PDF（第 4/6/7 章）原图裁出的连线图，
 # 文件名前半是器件号、后半是用途（func 实现函数 / cascade 级联 / ring 环形 …），
@@ -82,9 +82,9 @@ workbuddy
 *.session.json
 
 # 习题集的自包含 HTML（1.7 MB，公式字体 base64 内嵌，属构建产物）
-# 重新生成：node scripts/build_html.js "试卷/数字电路与逻辑_期末习题集_含答案与解析.md" \
-#                                    "试卷/数字电路与逻辑_期末习题集_含答案与解析.html"
-试卷/*.html
+# 重新生成：node scripts/build_html.js "计算机专业真题/数字电路与逻辑_期末习题集_含答案与解析.md" \
+#                                    "计算机专业真题/数字电路与逻辑_期末习题集_含答案与解析.html"
+计算机专业真题/*.html
 
 # 构建 HTML 用的 node 依赖（dev-only，重装即可）
 # 安装：npm i katex markdown-it（版本记录见 scripts/build_html.js 头注释）

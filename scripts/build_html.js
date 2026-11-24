@@ -8,8 +8,8 @@
  *
  * 用法：
  *   在仓库根目录：npm i katex markdown-it      # 只需装一次
- *   node scripts/build_html.js "试卷/数字电路与逻辑_期末习题集_含答案与解析.md" \
- *                              "试卷/数字电路与逻辑_期末习题集_含答案与解析.html"
+ *   node scripts/build_html.js "计算机专业真题/数字电路与逻辑_期末习题集_含答案与解析.md" \
+ *                              "计算机专业真题/数字电路与逻辑_期末习题集_含答案与解析.html"
  *
  * 约定：
  *   · 数学模式里**不许出现汉字**（`$[X]_{原}$` 会报 unicodeTextInMathMode），
