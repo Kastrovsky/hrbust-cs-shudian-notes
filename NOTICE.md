@@ -1,7 +1,7 @@
 # NOTICE · 许可范围说明 / Licensing Scope
 
 本仓库采用**双许可**，因为里面混了三类权利归属不同的东西。
-`LICENSE` 与 `LICENSE-CODE` 只放许可正文（便于平台自动识别），**范围说明在这份文件里**。
+`LICENSE` 与 `licenses/MIT.txt` 只放许可正文（便于平台自动识别），**范围说明在这份文件里**。
 
 This repository is **dual-licensed**. The two license files contain the legal texts only;
 this file explains which content falls under which license.
@@ -9,7 +9,7 @@ this file explains which content falls under which license.
 | 内容 | 许可 | 文件 |
 |---|---|---|
 | 文字整理内容：第 1–7 章讲义、例题与考法解析、真题精解的文字部分、复习纲要、集成器件速查、目录与使用说明 | **CC BY-NC-SA 4.0** | [`LICENSE`](LICENSE) |
-| 程序代码：`scripts/`、`agent/` 下的全部脚本 | **MIT** | [`LICENSE-CODE`](LICENSE-CODE) |
+| 程序代码：`scripts/`、`agent/` 下的全部脚本 | **MIT** | [`licenses/MIT.txt`](licenses/MIT.txt) |
 | 第三方材料：历年试卷**原题**、课程课件及其截图 | 版权归**哈尔滨理工大学及命题教师**，**不在本仓库许可范围内** | — |
 
 ## 一、文字整理内容（CC BY-NC-SA 4.0）
